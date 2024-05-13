@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\rusta\source\repos\PredPrak\PredPrak\obj\Debug\
+C:\Users\rusta\source\repos\PreddiplomnayaPraktika\PredPrak\PredPrak\obj\Debug\
 PredPrak
 none
 false
 DEBUG;TRACE
-C:\Users\rusta\source\repos\PredPrak\PredPrak\App.xaml
-1219584333
+C:\Users\rusta\source\repos\PreddiplomnayaPraktika\PredPrak\PredPrak\App.xaml
+4766014960
 
-6-502434485
+9-1966977664
 13-1310406943
-MainWindow.xaml;
+Authorization.xaml;MainWindow.xaml;Organizator.xaml;RegistrationOfJury.xaml;
 
 True
 

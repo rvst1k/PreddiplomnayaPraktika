@@ -10,26 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace PredPrak
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Organizator.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Organizator : Window
     {
-        public MainWindow()
+        public Organizator()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Authorization authorization = new Authorization();
-            authorization.Show();
-            this.Close();
         }
     }
 }
