@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EasyCaptcha.Wpf;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,28 @@ namespace PredPrak
     /// </summary>
     public partial class Authorization : Window
     {
+
         public Authorization()
         {
             InitializeComponent();
+            RemadeCaptcha();
+        }
+
+        private void RemadeCaptcha()
+        {
+            Captcha.CreateCaptcha(Captcha.LetterOption.Alphanumeric, 4);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (Answer.Text != Captcha.CaptchaText)
+            {
+                MessageBox.Show("Неверная CAPTCHA");
+            }
+            else
+            {
+                MessageBox.Show("))");
+            }
         }
     }
 }

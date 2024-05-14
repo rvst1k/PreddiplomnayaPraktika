@@ -3,11 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:captcha="clr-namespace:EasyCaptcha.Wpf;assembly=EasyCaptcha.Wpf"
         xmlns:local="clr-namespace:PredPrak"
         mc:Ignorable="d"
-        Title="Authorization" Height="450" Width="800">
+        Title="Authorization" Height="500" Width="800">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
@@ -26,6 +28,8 @@
         <TextBox Name="idNumber" Grid.Row="2" Grid.Column="1"></TextBox>
         <Label Grid.Column="1" Grid.Row="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom">Password</Label>
         <TextBox Name="Password" Grid.Row="4" Grid.Column="1"></TextBox>
-        <Button Grid.Column="1" Grid.Row="6">Войти</Button>
+        <captcha:Captcha Grid.Column="1" Grid.Row="5" Name="Captcha"/>
+        <TextBox FontSize="16" Grid.Row="6" Grid.Column="1" Margin="5" Name="Answer"/>
+        <Button Grid.Column="1" Grid.Row="7" Click="Button_Click">Войти</Button>
     </Grid>
 </Window>
