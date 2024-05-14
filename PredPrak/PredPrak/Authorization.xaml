@@ -27,9 +27,9 @@
         <Label Grid.Column="1" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom">idNumber</Label>
         <TextBox Name="idNumber" Grid.Row="2" Grid.Column="1"></TextBox>
         <Label Grid.Column="1" Grid.Row="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom">Password</Label>
-        <TextBox Name="Password" Grid.Row="4" Grid.Column="1"></TextBox>
+        <PasswordBox Name="Password" Grid.Row="4" Grid.Column="1"></PasswordBox>
         <captcha:Captcha Grid.Column="1" Grid.Row="5" Name="Captcha"/>
         <TextBox FontSize="16" Grid.Row="6" Grid.Column="1" Margin="5" Name="Answer"/>
-        <Button Grid.Column="1" Grid.Row="7" Click="Button_Click">Войти</Button>
+        <Button Name="button1" IsEnabled="True" Grid.Column="1" Grid.Row="7" Click="Button_Click">Войти</Button>
     </Grid>
 </Window>

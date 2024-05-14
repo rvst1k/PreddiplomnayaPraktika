@@ -22,10 +22,10 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Label Grid.Row="0" Grid.Column="1" Content="Окно организатора" FontSize="20" HorizontalContentAlignment="Center"/>
-        <Label Grid.Row="1" Grid.Column="1" Content="Доброе утро" HorizontalContentAlignment="Center"/>
-        <Label Grid.Row="2" Grid.Column="1" Content="Ms/Mrs Имя" HorizontalContentAlignment="Center"/>
-        <Image Grid.Row="3" Grid.RowSpan="2"  Grid.Column="0" HorizontalAlignment="Center" 
-               Source="https://mykaleidoscope.ru/x/uploads/posts/2023-05/1685075275_mykaleidoscope-ru-p-krasivii-zhenskii-profil-45.jpg"  
+        <Label Grid.Row="1" Grid.Column="1" Name="time" Content="Доброе утро" HorizontalContentAlignment="Center"/>
+        <Label Grid.Row="2" Grid.Column="1" Name="name" Content="Имя" HorizontalContentAlignment="Center"/>
+        <Image Name="pfp" Grid.Row="3" Grid.RowSpan="2"  Grid.Column="0" HorizontalAlignment="Center" 
+                
                VerticalAlignment="Center" Margin="10,10,10,10"></Image>
         <Button Grid.Row="3" Grid.Column="1">Мероприятия
             <Button.Resources>
@@ -41,7 +41,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button Grid.Row="5" Grid.Column="1">Жюри
+        <Button Grid.Row="5" Grid.Column="1" Click="Button_Click">Жюри
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="5"/>

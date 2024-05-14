@@ -26,6 +26,7 @@ namespace PredPrak
         public Nullable<int> Days { get; set; }
         public Nullable<int> CityId { get; set; }
         public Nullable<int> DirectionId { get; set; }
+        public string Photo { get; set; }
     
         public virtual Cities Cities { get; set; }
         public virtual Directions Directions { get; set; }

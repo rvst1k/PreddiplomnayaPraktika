@@ -100,6 +100,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="ModeratorWindow.xaml.cs">
+      <DependentUpon>ModeratorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OrganiztorWindow.xaml.cs">
+      <DependentUpon>OrganiztorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ParticipantWindow.xaml.cs">
+      <DependentUpon>ParticipantWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RegistrationOfJury.xaml.cs">
       <DependentUpon>RegistrationOfJury.xaml</DependentUpon>
     </Compile>
@@ -111,6 +120,9 @@
     </Compile>
     <Compile Include="Users.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ZhuriWindow.xaml.cs">
+      <DependentUpon>ZhuriWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="Authorization.xaml">
       <SubType>Designer</SubType>
@@ -131,11 +143,27 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ModeratorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Organizator.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="OrganiztorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ParticipantWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="RegistrationOfJury.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ZhuriWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

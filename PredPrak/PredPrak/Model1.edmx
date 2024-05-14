@@ -58,6 +58,7 @@
           <Property Name="Days" Type="int" />
           <Property Name="CityId" Type="int" />
           <Property Name="DirectionId" Type="int" />
+          <Property Name="Photo" Type="nvarchar(max)" />
         </EntityType>
         <!--Ошибки, обнаруженные при создании:
 предупреждение 6002: В таблице или представлении "predprak.dbo.EventsActivity" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
@@ -358,6 +359,7 @@
           <Property Name="Days" Type="Int32" />
           <Property Name="CityId" Type="Int32" />
           <Property Name="DirectionId" Type="Int32" />
+          <Property Name="Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Cities" Relationship="Self.FK__Event__CityId__44FF419A" FromRole="Event" ToRole="Cities" />
           <NavigationProperty Name="Directions" Relationship="Self.FK__Event__Direction__45F365D3" FromRole="Event" ToRole="Directions" />
           <NavigationProperty Name="Activity" Relationship="Self.EventsActivity" FromRole="Event" ToRole="Activity" />
@@ -489,7 +491,7 @@
           <End Role="Activity" Type="Self.Activity" Multiplicity="*" />
           <End Role="Event" Type="Self.Event" Multiplicity="*" />
         </Association>
-        <EntityContainer Name="predprakEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="predprakEntities2" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Activity" EntityType="Self.Activity" />
           <EntitySet Name="Cities" EntityType="Self.Cities" />
           <EntitySet Name="Country" EntityType="Self.Country" />
@@ -537,7 +539,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище predprakModelContainer" CdmEntityContainer="predprakEntities1">
+        <EntityContainerMapping StorageEntityContainer="Хранилище predprakModelContainer" CdmEntityContainer="predprakEntities2">
           <EntitySetMapping Name="Activity">
             <EntityTypeMapping TypeName="predprakModel.Activity">
               <MappingFragment StoreEntitySet="Activity">
@@ -584,6 +586,7 @@
                 <ScalarProperty Name="Days" ColumnName="Days" />
                 <ScalarProperty Name="CityId" ColumnName="CityId" />
                 <ScalarProperty Name="DirectionId" ColumnName="DirectionId" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -4,14 +4,14 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="e0525950410747d1b4932f057db5d0b2" Name="Diagram1">
-        <EntityTypeShape EntityType="predprakModel.Activity" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="predprakModel.Cities" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="predprakModel.Country" Width="1.5" PointX="3.75" PointY="7.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="predprakModel.Directions" Width="1.5" PointX="3.75" PointY="10.5" IsExpanded="true" />
+      <Diagram DiagramId="9eb94af2d79b40c0936a0dd244d22716" Name="Diagram1">
+        <EntityTypeShape EntityType="predprakModel.Activity" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="predprakModel.Cities" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="predprakModel.Country" Width="1.5" PointX="3.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="predprakModel.Directions" Width="1.5" PointX="3.75" PointY="10.625" IsExpanded="true" />
         <EntityTypeShape EntityType="predprakModel.Event" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="predprakModel.Gender" Width="1.5" PointX="3.75" PointY="13" IsExpanded="true" />
-        <EntityTypeShape EntityType="predprakModel.Roles" Width="1.5" PointX="3.75" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="predprakModel.Gender" Width="1.5" PointX="3.75" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="predprakModel.Roles" Width="1.5" PointX="3.75" PointY="15.5" IsExpanded="true" />
         <EntityTypeShape EntityType="predprakModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="predprakModel.Users" Width="1.5" PointX="6" PointY="3" IsExpanded="true" />
         <AssociationConnector Association="predprakModel.FK__Event__CityId__44FF419A" ManuallyRouted="false" />

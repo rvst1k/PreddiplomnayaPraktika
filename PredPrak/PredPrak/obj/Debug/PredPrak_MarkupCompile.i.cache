@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\zrust\source\repos\PreddiplomnayaPraktika\PredPrak\PredPrak\App.xaml
-4766014960
+81942994575
 2-1957146511
-212046223099
+251005687412
 191734951235
-Authorization.xaml;MainWindow.xaml;Organizator.xaml;RegistrationOfJury.xaml;
+Authorization.xaml;MainWindow.xaml;ModeratorWindow.xaml;Organizator.xaml;OrganiztorWindow.xaml;ParticipantWindow.xaml;RegistrationOfJury.xaml;ZhuriWindow.xaml;
 
-False
+True
 

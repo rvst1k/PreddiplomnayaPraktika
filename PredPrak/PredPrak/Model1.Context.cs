@@ -13,10 +13,10 @@ namespace PredPrak
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class predprakEntities1 : DbContext
+    public partial class predprakEntities2 : DbContext
     {
-        public predprakEntities1()
-            : base("name=predprakEntities1")
+        public predprakEntities2()
+            : base("name=predprakEntities2")
         {
         }
     
